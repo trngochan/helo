@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 32px; */
+}
+
+.flex {
+    display: flex;
+}
+
+.mt-0{
+    margin-top: 0;
+}
+
+.mt-46{
+    margin-top: 46px;
+}
+
+.mt-64{
+    margin-top: 64px;
+}
+
+.pdt-64{
+    padding-top: 64px;
+}
+
+.pdb-64 {
+    padding-bottom: 64px;
+}
+
+.pdt-48 {
+    padding-top: 48px;
+}
+
+.pdb-48 {
+    padding-bottom: 48px;
+}
+
+.pdb-96{
+    padding-bottom: 96px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+.no-under{
+    text-decoration: none;
+}
+
+.header{
+    position: fixed;
+    background: black;
+    height: 46px;
+    width: 100%;
+}
+
+.nav > li{
+    font-size: 30px;
+    list-style: none;
+    height: 46px;
+}
+
+.nav > li >a {
+    padding: 0 16px;
+    line-height: 46px;
+}
+
+.nav > li:hover,.search-section:hover{
+    background: grey;
+    
+}
+
+
+.nav > li:first-child,.nav > li:last-child {
+    /* width: 160px; */
+    width: fit-content;
+ }
+
+.nav>li>a{
+    color: white;
+}
+
+.header{
+    z-index: 1;
+}
+
+.header > i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:white ;
+    padding: 0 16px;
+    line-height: 46px;
+}
+
+.header > .menu-section:hover{
+    background: red;
+}
+
+.subnav > li{
+    background: white;
+    list-style: none;
+    min-width: 250px;
+}
+
+.subnav > li:hover{
+    background: grey ;
+}
+
+
+
+.subnav {
+    display: none;
+}
+
+.nav > li:hover  .subnav {
+    display: block;
+} 
+
+.subnav > li > a {
+    color: black;
+    margin-left: 16px;
+}
+
+.menu-section {
+    display: none;
+}
+
+/* SLIDER */
+
+.slider{
+    width:  100%;
+    padding-top: 50%;
+    background: url(/w3-band/assets/img/slider/slider1.jpg) no-repeat center / cover    ;
+    position: relative;
+}
+
+.slider .note {
+    position: absolute;
+    bottom: 64px ;
+    color: blanchedalmond;
+    text-align: center;
+    width: 100%;
+}
+
+/* THE BAND */
+.band {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.textband {
+    text-align: center;
+}
+
+.textband h5 {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 15px 0;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.textband p{
+    margin: 25px;
+    color: rgba(0,0,0,0.6);
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.textband h1 { 
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    font-weight: 400;
+
+}
+
+/* MEMBER */
+.member-item {
+    text-align: center;
+
+}
+
+.member-item img {
+    width: 60%;
+    border-radius: 4px;
+    padding-top: 15px;
+}
+
+/* tourate */
+
+.tourrate {
+    background: black;
+}
+
+.content-tourrate {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-tourrate > .textband h1,
+.content-tourrate > .textband p{
+    color: white;
+}
+
+.ticket {
+    background-color: white;
+}
+
+.ticket li {
+    line-height: 1.5;
+    border-bottom :0.3px solid rgba(0,0,0,0.2) ;
+    padding: 8px 16px;
+    list-style: none;
+}
+
+.ticket li:last-child {
+    border-bottom: none;
+}
+
+.ticket span {
+    background: red;
+    padding: 2px 4px;
+    color: white;
+}
+#number {
+    float: right;
+    padding: 4px;
+    border-radius: 50px;
+}
+.tour-list {
+    background: white;
+    margin-top: 46px;
+}
+
+
+.tour-list img {
+    width: 100%;
+    height: auto;
+}
+
+.infor-tour {
+    /* color: white; */
+    padding-left: 16px;
+}
+
+.infor-tour h2 {
+padding-top: 15px;
+}
+
+.infor-tour h3 {
+    padding: 15px 0;
+}
+
+.buyticket {
+    padding: 6px;
+    background: black;
+    color: white; 
+    border: none;
+}
+
+.buyticket:hover {
+    color: black;
+    background: grey;
+}
+
+/* CONTACT */
+
+.contact {
+    /* width: 800px; */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contact a {
+    opacity: 0.7;
+}
+
+.contact a:hover {
+    opacity: 1;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact ul li .icons {
+    margin-right: 8px;
+} 
+
+.contact .input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+}
+ .sumbit {
+     float: right;
+    
+ }
+ 
+
+/* MAP */
+.map img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/*  FOOTER */
+
+.footer {
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+}
+ 
+.footer i {
+    font-size: 24px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+
+}
+
+.footer p {
+    margin-top: 16px;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .band , .tourrate , .contact {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .nav > li:last-child {
+        width: fit-content;
+    }
+}
+
+@media only screen  and (max-width: 739px) {
+.header {
+        overflow: hidden;
+    }
+
+ .header  > ul {
+     flex-direction: column;
+     z-index: 2;
+ } 
+
+ .search-section {
+     display:none;
+ }
+
+ .menu-section {
+     display: inline-block;
+     z-index: 1;
+ }
+
+ .menu-section:hover {
+    color: black;
+    background:blanchedalmond ;
+ }
+
+ .nav ,.nav li {
+     /* width: 100%; */
+     /* flex: 1; */
+ }
+
+ 
+
+ .subnav {
+     position: fixed;
+     width: 100%;
+     background: #333   ;
+ }
+
+ .subnav li {
+     background: #333;
+     padding: 5px 16px;
+     font-size: 24px;
+ }
+
+ .subnav li a {
+     color: white;
+ }
+ 
+ .main {
+     overflow: hidden;
+ }
+ 
+ .band,.tourrate,.contact {
+     padding: 0 16px;
+ }
+
+ .slider .note {
+     bottom: 24px;
+ }
+
+ .mt-16-mb {
+     margin-top: 16px;
+ }
+
+ .nav li:last-child {
+     width: auto;
+ }
+ 
+}
+    
